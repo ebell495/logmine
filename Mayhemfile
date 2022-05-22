@@ -1,0 +1,12 @@
+project: logmine
+target: logmine
+
+image: ghcr.io/ebell495/logmine:latest
+duration: 300
+
+tests: 
+    - file:///no-tests
+
+cmds:
+    - cmd: fuzz/fuzz.py
+      libfuzzer: true
