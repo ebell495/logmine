@@ -2,5 +2,5 @@ project: logmine
 target: fuzz
 
 cmds:
-    - cmd: fuzz/fuzz.py
+    - cmd: fuzz/fuzz_logger.py
       libfuzzer: true
